@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Basics (Formats and Attributes)</title>
+    </head>
+
+    <body>
+        <h1>Image Formats & Embing Them</h1>
+        <p>This page covers common image <mark><b>formats.</b></mark></p>
+
+        <p>You can visit <a href="./LINKS.html">Links</a> for more info about usage of links or <a href="misc/MISC.html">Extras</a> for more extra knowledge on HTML.</p>
+
+        <p><b><mark>Common, popular image formats are:</mark></b></p>
+        <ul>
+            <li><b>.JPG</b>
+                <dl>
+                    <dt><b>Specs of JPG format</b></dt>
+                    <dd><i><u><b>JPG</b></u> images are designed for handling large color palettes without exorbitantly increasing file size. This makes them great for photos and images. However, on the other hand <u>JPGs don't allow for transperent pixels</u>, which you can see in the white edges of the image below <b>if you look real close:</b></i></dd>
+                </dl>
+            </li>
+        </ul>
+                
+        <img src="images/mochi.jpg" width="200" height="200" alt="An Mochi Logo in JPG format.">
+
+        <ul>
+            <li><b>.GIF</b>
+                <dl>
+                    <dt><b>Specs of GIF format</b></dt>
+                    <dd><i><b><u>GIFs</u></b> are the go-to option for simple animations, but the trade off is that they're somewhat limited in terms of color palette. <b>Never use them for photos.</b></i></dd>
+                </dl>
+            </li>
+        </ul>
+       
+        <img src="images/mochi.gif" width="200" height="200" alt="An Mochi Logo-Animaton in GIF format.">
+
+        <ul>
+            <li><b>.PNG</b>
+                <dl>
+                    <dt><b>Specs of PNG format</b></dt>
+                    <dd><i><b>PNGs</b> are great for anything thats not a photo or animated. For photos, a PNG file of the same quality <u>(as perceived the human eye)</u> would generally be bigger than an equivalent JPG file.<b>This makes them an excellent fit for icons, technical diagrams, logos, etc</b></i></dd>
+                </dl>
+            </li>
+        </ul>
+
+        <img src="images/mochi.png" width="200" height="200" alt="An Mochi Logo in PNG format.">
+
+        <ul>
+            <li><b>.SVG</b>
+                <dl>
+                    <dt><b>Specs of SVG format</b></dt>
+                    <dd><i><b>SVGs</b> are vector-based graphics format, meaning it can scale up or down to any dimension without loss of quality. <b>. This property makes SVG images a wonderful tool for <u>responsive</u> design. Theyre good for pretty much all the same use cases as PNGs, and you should use them whenever you can.</b> </i></dd>
+                </dl>
+            </li>
+        </ul>
+
+        <img src="images/mochi.svg" alt="An Mochi Logo in SVG format.">
+
+        <h2>Image Dimensions</h2>
+
+        <p>By default, the <b>img</b> element uses the inherit dimensions of its image file. The example JPG, GIF, and PNG images (taken from internetingishard.net) are actually 150 to 150 pixels, while our SVG mochi is only 75 to 75 pixels.</p>
+
+        <p>To get our pixel-based images down to the intended size (75 to 75), we can use the <b>img</b> elements width attribute.</p>
+
+        <p><b>For Example: <mark>img src='images/mochi.jpg' width='75'</mark></b></p>
+
+        <h2>Text Alternatives</h2>
+
+        <p>Adding alt attributes to your <mark>img</mark> elements is a best practice. It defines a “text alternative” to the image being displayed. This has an impact on both search engines and users with text-only browsers (e.g., people that use text-to-speech software due to a vision impairment).</p>
+
+        <p><b>For Example: <mark>img src='images/mochi.jpg' width='75' alt='A mochi ball in a bubble'</mark></b></p>
+
+    </body>
+
+
+
+</html>

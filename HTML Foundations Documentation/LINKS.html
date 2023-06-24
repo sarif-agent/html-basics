@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links</title>
+    </head>
+
+    <body>
+        <h1>Links</h1>
+
+        <p>This example is about links</p>
+
+        <p>You can visit <a href="IMAGES.html">Images</a> for more info on image using in HTML or <a href="misc/MISC.html">Extras</a> for more extra knowledge on HTML.</p>
+
+        <p>This particular page is about <strong>links!</strong> There are three kinds of links:</p>
+
+        <ul>
+            <li><b>Absolute Links:</b>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer Network</a>. Which is a very good resorce for web developers.      
+                <dl>
+                    <dt>More Info About Absolute Links</dt>
+                    <dd>"Absolute” links are the most detailed way you can refer to a web resource. They start with the “scheme” <b><mark>(typically http:// or https://)</mark></b> followed by the domain name of the website, then the path of the target web page.</dd>
+                </dl>
+                <p><b><mark>(From internetingishard.net)</mark></b> <img src="images/absolute-ex.png" alt="Absolute Link Example"></p>
+            </li>
+
+            
+
+            <li><b>Relative Links:</b>
+                like to our <a href="misc/MISC.html">Extras Page</a>
+                <dl>
+                    <dt>More Info About Relative Links:</dt>
+                    <dd>“Relative” links point to another file in your website from the vantage point of the file youre editing. Its implied that the scheme and domain name are the same as the current page, so the only thing you need to supply is the path.</dd>    
+                </dl>
+                <p><b><mark>(From internetingishard.net)</mark></b> <img src="images/relative-ex.png" alt="Relative Link Example"></p>
+            </li>
+
+                    
+
+            <li><b>Root-Relative:</b>
+                <dl>
+                    <dt>More Info About ROOT-Relative Links:</dt>
+                    <dd>“Root-relative” links are similar to the previous section, but instead of being relative to the current page, theyre relative to the “root” of the entire website. For instance, if your website is hosted on our-site.com, all root-relative URLs will be relative to our-site.com.</dd>
+                    <dd><i>Unfortunately, there is one caveat to our discussion of root-relative links: this entire tutorial uses local HTML files instead of a website hosted on a web server. This means we won’t be able to experiment with root-relative links. But, if we did have a real server, the link to our home page would look like this:</i></dd>
+                </dl>     
+                    
+                <p><b>This won't work for our local HTML files! Root-relative links, like to the </b> <a href="/">home page</a> of our website, but those aren't useful to us right now.</p>    
+                <p><b><mark>(From internetingishard.net)</mark></b> <img src="images/root-relative-ex.png" alt="Root Relative Link Example"></p>
+            </li>
+
+                            
+        </ul>
+
+        <h2>Link Targets</h2>
+
+        <p>Attributes alter the meaning of HTML elements, and sometimes you need to modify more than one aspect of an element. For example: <b>"a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"</b> elements also accept a target attribute that defines where to display the page when the user clicks the link. By default, most browsers replace the current page with the new one. We can use the target attribute to ask the browser to open a link in a new window/tab.</p>
+        <ul>
+            <li><b>Absolute Links,</b> with <i>target</i> attribute 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Mozilla Developer Network</a>
+            </li>    
+        </ul>
+
+        <h2>Naming Conventions</h2>
+
+        <p>You notice that none of our files or folders have spaces in their names. Thats on purpose. Spaces in URLs require special handling and should be avoided at all costs. To see what were talking about, try creating a new file in our links-and-images project called spaces are bad.html. Add a little bit of text to it, then open it in Google Chrome or Safari <b>(Firefox cheats and preserves the spaces).</b></p>
+
+        <p><b><mark>For Example: links-and-images/spaces%20are%20bad.html</mark></b></p>
+
+        <p>In the address bar, you will see that all our spaces have been replaced with <mark>%20</mark> as shown above. Spaces arent allowed in URLs, and thats the special encoding used to represent them. Instead of a space, you should always use a hyphen, as weve been doing throughout this tutorial. Its also a good idea to use all lowercase characters for consistency.</p>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Extras</title>
+    </head>
+
+    <body>
+        <h1>Extra HTML Basic Infos</h1>
+
+        <p>You can visit <a href="../IMAGES.html">Images</a> for more info on image using in HTML or <a href="../LINKS.html">Links</a> for more extra knowledge on using Links in HTML.</p>
+
+
+        <h2>Parent Folders</h2>
+
+        <p>That works for referring to files that are in the same folder or a deeper folder. What about linking to pages that are in a directory above the current file? Lets try creating relative links to <b>links.html</b> and <b>images.html</b> from within our <b>extras.html</b> file.</p>
+
+        <p>To do this, we need the <mark><b>..</b></mark> syntax. Two consecutive <b>dots</b> in a file path represent <b>a pointer to the parent directory.</b></p>
+
+        <p>This page is about miscellaneous HTML things, but you may also be interested in <a href="../LINKS.html">links</a> or <a href="../IMAGES.html">images.</a></p>
+
+        <p><i>To navigate up through multiple directories, use multiple .. references, like so:</i>
+
+            <i><b><mark>../../elsewhere.html</mark></b></i>
+        </p>
+
+        <p><b>ps: </b><i>Relative links are nice because they let you move around entire folders without having to update all the <mark><b>href</b></mark>s on your <mark>a - anchor</mark> elements, but they can get a little confusing when all your links start with a bunch of dots. Theyre best for referring to resources in the same folder or in a standalone section of your website.</i></p>
+
+        <h2>More HTML Attributes</h2>
+
+        <h3>Document Langueage</h3>
+
+        <p>A web pages default language is defined by the lang attribute on the top-level <mark>html</mark> element. Our document is in English, so well use the en country code as the attribute value (do this for all of the pages we created):</p>
+        <p><b><mark>html lang='en'</mark></b></p>
+
+        <h3>Character Sets</h3>
+
+        <p>A “character set” is kind of like a digital alphabet for your browser. Its different from the language of your document in that it only affects how the letters themselves are rendered, not the language of the content.</p>
+
+        <p>For Example: If we use special characters without setting our character set, the presentation of our HTML page will have <b>weird stuff.</b></p>
+
+        <img src="../images/char-set-ex.png" alt="An image about consuquences of using non-english characters without setting a charset">
+
+
+        <p>Thats because the default character set for most browsers does not accommodate these <b>special</b> characters. To fix this, specify a <mark><b>UTF-8</b></mark> character encoding by adding a <b><mark>meta</mark></b> element with a charset attribute to the <b><mark>head</mark></b> of our HTML code.</p>
+        <p><b><mark>For Example: meta charset='UTF-8'</mark></b></p>
+
+        <p><b>ps: <i>The special characters should now render correctly. These days, <mark>UTF-8</mark> is sort of like a universal alphabet for the Internet. Every web page you create should have this line in its <mark>head.</mark></i></b></p>
+
+        <h3>HTML Entities</h3>
+
+        <p>There are three reserved characters in HTML: &lt; &gt; and &amp;. You should always use HTML entities for these three characters.</p>
+        <p>This is because they mean something in the HTML syntax: <mark>&lt;</mark> begins a new tag, <mark>&gt;</mark> ends a tag, and &amp;, as were about to learn, &amp; sets off an HTML entity.</p>
+
+        <p>Entities always begin with an ampersand &amp; and end with a semicolon (;). In between, you put a special code that your browser will interpret as a symbol. In this case, it interprets lt, gt, and amp as less-than, greater-than, and ampersand symbols, respectively.</p>
+
+        <h3>Quotes</h3>
+
+        <p>Curly quotes are by no means necessary, but if you care about typography they will be some of the most common HTML entities youll use. Theres four different kinds of curly quotes (opening and closing single and double quotes):</p>
+
+        <img src="../images/quotes.png" alt="An image that shows Quotes entities">
+
+        <h3>NOTE: UTF-8 AND ENTITIES</h3>
+
+        <p>In the olden days of the web, HTML files werent allowed to have special characters in them, making entities much more useful. But, since we’re now using a UTF-8 character set, we should be able to insert any character directly into the HTML document. This makes entities primarily useful as reserved characters or for convenience when authoring straight HTML.</p>
+    </body>
+
+</html>
